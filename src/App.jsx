@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import App2 from "./practice/App2";
+import App3 from "./practice/App3";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -31,6 +32,9 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       <App2></App2>
+      <App3 taskName="PHP" isDone={true}></App3>
+      <App3 taskName="React" isDone={false}></App3>
+      <App3 taskName="Python" isDone={false}></App3>
     </>
   );
 }
