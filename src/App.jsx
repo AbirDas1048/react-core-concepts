@@ -5,9 +5,15 @@ import "./App.css";
 import App2 from "./practice/App2";
 import App3 from "./practice/App3";
 import ConditionalRendering from "./practice/ConditionalRendering";
+import RenderComponentWithMap from "./practice/RenderComponentWithMap";
 
 function App() {
   const [count, setCount] = useState(0);
+  let singers = [
+    { name: "Abir", song: "ki hoyeche", age: 20 },
+    { name: "Nibir", song: "kichu hoy nai", age: 15 },
+    { name: "Prabir", song: "Na na kichu hoyeche", age: 18 },
+  ];
 
   return (
     <>
@@ -61,6 +67,12 @@ function App() {
         isDone={false}
         doneOnTime={true}
       ></ConditionalRendering>
+
+      <br />
+
+      {singers.map((singer) => (
+        <RenderComponentWithMap singer={singer}></RenderComponentWithMap>
+      ))}
     </>
   );
 }
