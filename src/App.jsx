@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import App2 from "./practice/App2";
 import App3 from "./practice/App3";
+import ConditionalRendering from "./practice/ConditionalRendering";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -32,9 +33,34 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       <App2></App2>
+      <br />
       <App3 taskName="PHP" isDone={true}></App3>
       <App3 taskName="React" isDone={false}></App3>
-      <App3 taskName="Python" isDone={false}></App3>
+      <App3 taskName="Python" isDone={true}></App3>
+      <br />
+      <ConditionalRendering
+        taskName="PHP"
+        isDone={true}
+        doneOnTime={true}
+      ></ConditionalRendering>
+
+      <ConditionalRendering
+        taskName="React"
+        isDone={false}
+        doneOnTime={false}
+      ></ConditionalRendering>
+
+      <ConditionalRendering
+        taskName="Python"
+        isDone={true}
+        doneOnTime={false}
+      ></ConditionalRendering>
+
+      <ConditionalRendering
+        taskName="Java"
+        isDone={false}
+        doneOnTime={true}
+      ></ConditionalRendering>
     </>
   );
 }
