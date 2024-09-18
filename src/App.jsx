@@ -6,6 +6,7 @@ import App2 from "./practice/App2";
 import App3 from "./practice/App3";
 import ConditionalRendering from "./practice/ConditionalRendering";
 import RenderComponentWithMap from "./practice/RenderComponentWithMap";
+import HandleEvent from "./practice/HandleEvent";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -17,7 +18,7 @@ function App() {
 
   return (
     <>
-      <div>
+      {/* <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -72,7 +73,8 @@ function App() {
 
       {singers.map((singer) => (
         <RenderComponentWithMap singer={singer}></RenderComponentWithMap>
-      ))}
+      ))} */}
+      <HandleEvent></HandleEvent>
     </>
   );
 }
