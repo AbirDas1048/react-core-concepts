@@ -7,6 +7,7 @@ import App3 from "./practice/App3";
 import ConditionalRendering from "./practice/ConditionalRendering";
 import RenderComponentWithMap from "./practice/RenderComponentWithMap";
 import HandleEvent from "./practice/HandleEvent";
+import Counter from "./practice/Counter";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -73,8 +74,10 @@ function App() {
 
       {singers.map((singer) => (
         <RenderComponentWithMap singer={singer}></RenderComponentWithMap>
-      ))} */}
+      ))}
       <HandleEvent></HandleEvent>
+       */}
+      <Counter></Counter>
     </>
   );
 }
