@@ -8,6 +8,7 @@ import ConditionalRendering from "./practice/ConditionalRendering";
 import RenderComponentWithMap from "./practice/RenderComponentWithMap";
 import HandleEvent from "./practice/HandleEvent";
 import Counter from "./practice/Counter";
+import LoadDataWithUseEffect from "./practice/LoadDataWithUseEffect";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -76,8 +77,8 @@ function App() {
         <RenderComponentWithMap singer={singer}></RenderComponentWithMap>
       ))}
       <HandleEvent></HandleEvent>
-       */}
-      <Counter></Counter>
+      <Counter></Counter> */}
+      <LoadDataWithUseEffect></LoadDataWithUseEffect>
     </>
   );
 }
