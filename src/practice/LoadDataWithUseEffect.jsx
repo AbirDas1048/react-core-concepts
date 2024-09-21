@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import User from "./User";
 
 export default function LoadDataWithUseEffect() {
   const [users, setUsers] = useState([]);
@@ -10,6 +11,9 @@ export default function LoadDataWithUseEffect() {
   return (
     <div>
       <p>Total users = {users.length}</p>
+      {users.map((user) => (
+        <User user={user}></User>
+      ))}
     </div>
   );
 }
